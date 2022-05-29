@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button color="secondary" ion-button (tap)="presentActionSheet()" block> Choose Image  </button>
+  <button color="secondary" ion-button (tap)="chooseFile()" block> Choose File  </button>
+  <button color="secondary" [disabled]="fileArray.length == 0  && imageArr.length == 0" ion-button (tap)="uploadImageAndFile()" block> Upload Image/File  </button>
+</ion-content>
